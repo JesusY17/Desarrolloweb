@@ -46,7 +46,7 @@ font-family: 'Poppins', sans-serif;
 
 .logo {
     font-size: 25px;
-    color: chartreuse;
+    color: grey;
     text-transform: uppercase;
     font-weight: 800;
 
@@ -60,7 +60,7 @@ font-family: 'Poppins', sans-serif;
 .menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
-    color: chocolate;
+    color: black;
     display: block;
 
 }
@@ -101,6 +101,8 @@ font-family: 'Poppins', sans-serif;
     min-width: 400px;
 
 }
+
+
 
 .table {
     width: 100%;
@@ -161,6 +163,7 @@ th, td {
     background-color: #111;
     color: #ffff;
     border-radius: 5px;
+
 }
 
 .ofert {
@@ -179,11 +182,11 @@ th, td {
 
 .ofert-img {
     flex-basis: 50%;
-    margin-right: 15%;
+    margin-right: auto;
 }
 
 .ofert img img {
-    width: 250%;
+    width: 25%;
 }
 
 .ofert-text {
@@ -198,6 +201,34 @@ th, td {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+.blog-1{
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+.blog-2{
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.blog-3{
+    width: 400px;
+    height: auto;
+    margin-bottom: 40px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   text-align: center;
+}
 
 .btn-2 {
     display: inline-block;
@@ -206,10 +237,13 @@ th, td {
     color: #ffffff;
     border-radius: 5px;
     font-size: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
 .productos h2{
     color: #111111;
     font-family: "Oswald";
+
 }
 
