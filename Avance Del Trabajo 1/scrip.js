@@ -14,7 +14,7 @@ function cargarEvenlisteners() {
 
 function comprarElemento(e) {
     e.preventDefault(),
-    if(e.target.classList.contains("agregar-carrito")) {
+    it(e.target.classList.contains("agregar-carrito")) {
         const elemento = e.target.parenElement.parenElement;
         leerDatosElemento(elemento);
     }
@@ -23,7 +23,7 @@ function comprarElemento(e) {
 
 function leerDatosElemento(elemento) {
     const infoElement = {
-        img:elemento.querySelector("img").src,
+        imagen:elemento.querySelector("img").src,
         titulo: elemento.querySelector("h3").textContent,
         precio: elemento.querySelector(".precio").textContent,
         id: elemento.querySelector("a").getAttribute("data-id")
@@ -34,12 +34,39 @@ function leerDatosElemento(elemento) {
 
 function insertarCarrito(elemento) {
     const row=document.createElement("tr");
-    row.innerHTML =
-    <td>
-        <img src="$"
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
+    row.innerHTML = `
+        <td>
+            <img src="${elemento.imagen}" width=100 />
+        </td>
+        <td>
+            ${elemento.titulo}
+        </td>
+        <td>
+        ${elemento.precio}
+        </td>
+        <td>
+            <a href="a class="borrar" data-id="${elemento.id}">x </a>
+        </td>
+
+    `;
+
+    lista.appendChild(row);
+}
+
+function eliminarElemento(e) {
+    e.preventDefault();
+    let elemento,
+        elementoId;
+    if(e.target.classlist.contains("borrar")) {
+        e.target.parenElement.parentElement.remove();
+        elemento = e.target.parentElement.parentElement;
+        elementoId = elemento.querySelector ("a").getAttribute ("data-id");
+    }
+}
+
+function vaciarCarrito() {
+    while(lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
+    return false;
 }
