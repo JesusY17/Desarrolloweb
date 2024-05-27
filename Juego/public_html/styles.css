@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro, .game-list, .shopping-cart, .contact-form, .login-form {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    margin-top: 1em;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.game-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+    width: 200px;
+}
+
+.game-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #ff6f61; /* Color de fondo */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #f94144; /* Cambio de color al pasar el mouse */
+}
+
+footer {
+    background-color: #ff6f61; /* Color de fondo */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
