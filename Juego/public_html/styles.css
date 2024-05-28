@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: orange; /* Cambia el color de fondo del body a naranja */
+    background-color: #D5D8DC; /* Cambia el color de fondo del body a naranja */
 }
 
 header {
@@ -38,43 +38,97 @@ main {
 .intro, .game-list, .shopping-cart, .contact-form, .login-form {
     margin-bottom: 2em;
     text-align: center;
-    background-color: #fff; /* Cambia el color de fondo de estas secciones a blanco */
+    background-color: #D6EAF8; /* Cambia el color de fondo de estas secciones a blanco */
     padding: 1em; /* Añadido padding para un mejor espacio interior */
     border-radius: 5px; /* Bordes redondeados para mejor apariencia */
     margin-left: 50px; /* Ajusta el margen izquierdo */
     margin-right: 50px; /* Ajusta el margen derecho */
 }
-
-.intro p {
-    font-size: 1.2em;
+/*INFORMACION Y ESTRUCTURA*/
+.intro {
+    text-align: center;
+    padding: 2rem;
 }
 
-.button {
-    display: inline-block;
-    padding: 0.75em 1.5em;
-    margin-top: 1em;
+.intro .button {
     background-color: #333;
-    color: #fff;
+    color: white;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.button:hover {
+.intro .button:hover {
     background-color: #555;
 }
 
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-container {
+    display: flex;
+    
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+.carrusel1 {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*game.index*/
 .game-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
 }
 
 .game-item {
-    border: 1px solid #ddd;
-    padding: 1em;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
     text-align: center;
-    width: 200px;
 }
 
 .game-item img {
@@ -84,16 +138,28 @@ main {
 
 button {
     background-color: #333;
-    color: #fff;
+    color: white;
     border: none;
-    padding: 0.5em 1em;
+    padding: 0.2rem 1rem;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: indigo;
 }
 
+.shopping-cart button {
+    background-color: black;
+    color: white;
+    border: none;
+    line-height: 10px;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.shopping-cart button:hover {
+    background-color: graytext;
+}
 footer {
     background-color: #333;
     color: #fff;

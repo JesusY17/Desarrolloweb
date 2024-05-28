@@ -6,7 +6,7 @@
     <title>Tienda de Juegos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="main-page">
     <header>
         <h1>Tienda de Juegos</h1>
         <nav>
@@ -25,12 +25,24 @@
             <p>Encuentra los mejores juegos a los mejores precios.</p>
             <a href="games.html" class="button">Ver Juegos</a>
         </section>
+
+        <section class="carousel">
+            <button class="carousel-button prev">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-item active">
+                    <img src="img/imagen1.jpg" alt="GOD OF WAR RAGNAROK">
+                    <div class="image-caption"></div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/imagen2.jpg" alt="HORIZON">
+                    <div class="image-caption"></div>
+                    
+                </div>
+                <!-- Agrega más elementos del carrusel aquí -->
+            </div>
+            <button class="carousel-button next">&#10095;</button>
+        </section>
     </main>
-
-    <footer>
-    <div class="footer-text">© 2024 Tienda de Juegos. Todos los derechos reservados</div>
-    </footer>
-
 
     <script src="script.js"></script>
 </body>
