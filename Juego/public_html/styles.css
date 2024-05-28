@@ -1,8 +1,10 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: orange; /* Cambia el color de fondo del body a naranja */
 }
 
 header {
@@ -36,6 +38,11 @@ main {
 .intro, .game-list, .shopping-cart, .contact-form, .login-form {
     margin-bottom: 2em;
     text-align: center;
+    background-color: #fff; /* Cambia el color de fondo de estas secciones a blanco */
+    padding: 1em; /* Añadido padding para un mejor espacio interior */
+    border-radius: 5px; /* Bordes redondeados para mejor apariencia */
+    margin-left: 50px; /* Ajusta el margen izquierdo */
+    margin-right: 50px; /* Ajusta el margen derecho */
 }
 
 .intro p {
@@ -95,6 +102,22 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    margin-top: 2em; /* Ajusta el margen superior para reducir la distancia desde arriba */
+}
+
+.footer-text {
+    margin-top: 0.5em; /* Ajusta el margen superior del texto para centrarlo verticalmente */
+}
+
+
+.login-form {
+    margin: 100px auto 0; /* Aumenta el margen superior para mover el cuadro de inicio de sesión hacia abajo */
+    width: 300px; /* Define un ancho para el formulario */
+}
+
+/* Añade margen superior para separar el cuadro de inicio de sesión inferior */
+.login-form + .login-form {
+    margin-top: 2em;
 }
 
 .login-form label {
@@ -104,14 +127,14 @@ footer {
 }
 
 .login-form input {
-    width: 100%;
+    width: calc(100% - 20px); /* Reduzca el ancho de los campos de entrada de texto */
     padding: 0.5em;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
 
 .login-form button {
-    width: 100%;
+    width: calc(100% - 20px); /* Reduzca el ancho del botón */
     padding: 0.5em;
     background-color: #ff6f61; /* Color de fondo */
     color: #fff;
@@ -122,14 +145,4 @@ footer {
 
 .login-form button:hover {
     background-color: #f94144; /* Cambio de color al pasar el mouse */
-}
-
-footer {
-    background-color: #ff6f61; /* Color de fondo */
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
